@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* luckiest-guy-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/luckiest-guy-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.luckieFont {
+  font-family: 'Luckiest Guy';
+}
+
+/* ultra-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Ultra';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/ultra-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.ultraFont {
+  font-family: 'Ultra';
+}
