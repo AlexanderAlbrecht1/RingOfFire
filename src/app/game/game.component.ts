@@ -7,10 +7,11 @@ import { Game } from '../models/game';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './game.component.html',
-  styleUrl: './game.component.scss'
+  styleUrls: ['./game.component.scss'],
 })
 export class GameComponent {
   pickCardAnimation = false;
+  currentCard: string = '';
   game: Game = new Game();
 
   ngOnInit(): void {
@@ -20,12 +21,17 @@ export class GameComponent {
   newGame() {
     this.game = new Game();
     console.log(this.game);
-
   }
 
   takeCard() {
-    this.pickCardAnimation = true;
+    if (!this.pickCardAnimation) {
+      this.currentCard = this.game.stack.pop() || '';
+      console.log(this.currentCard);
+      this.pickCardAnimation = true;
 
+      setTimeout(() => {
+        this.pickCardAnimation = false;
+      }, 1500);
+    }
   }
-
 }
