@@ -29,9 +29,12 @@ export class GameComponent {
       console.log(this.currentCard);
       this.pickCardAnimation = true;
 
+      console.log(this.game);
+
       setTimeout(() => {
+        this.game.playedCards.push(this.currentCard);
         this.pickCardAnimation = false;
-      }, 1500);
+      }, 1000);
     }
   }
 }
