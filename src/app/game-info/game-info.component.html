@@ -1,4 +1,4 @@
 <mat-card appearance="outlined">
-  <mat-card-title>{{ title }}</mat-card-title>
-  <mat-card-content>{{ description }}</mat-card-content>
+  <mat-card-title>{{ card ? title : 'How to start' }}</mat-card-title>
+  <mat-card-content>{{ card ? description : '>click< on card stack to start, >click< "+" to add player' }}</mat-card-content>
 </mat-card>
