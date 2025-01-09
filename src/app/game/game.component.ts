@@ -37,15 +37,13 @@ export class GameComponent {
   takeCard() {
     if (!this.pickCardAnimation) {
       this.currentCard = this.game.stack.pop() || '';
-      console.log(this.currentCard);
       this.pickCardAnimation = true;
-
-      console.log(this.game);
 
       setTimeout(() => {
         this.game.playedCards.push(this.currentCard);
         this.pickCardAnimation = false;
       }, 1000);
+      this.game.currentPlayer = (this.game.currentPlayer + 1) % this.game.players.length;
     }
   }
 
