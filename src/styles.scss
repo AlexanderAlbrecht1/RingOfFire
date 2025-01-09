@@ -17,7 +17,7 @@ body {
 }
 
 .luckieFont {
-  font-family: 'Luckiest Guy';
+  font-family: 'Luckiest Guy' !important;
 }
 
 /* ultra-regular - latin */
@@ -30,5 +30,8 @@ body {
 }
 
 .ultraFont {
-  font-family: 'Ultra';
+  font-family: 'Ultra' !important;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -2,7 +2,7 @@
 width: 300px;
 display: flex;
 align-items: center;
-background-color: #4b4b4b;
+background-color: #4b4b4bd2;
 border-radius: 50px 0 0 50px;
 
   span {
@@ -11,9 +11,13 @@ border-radius: 50px 0 0 50px;
   }
 
   img {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     object-fit: cover;
     border-radius: 100%;
   }
+}
+
+.player-active{
+  background-color: purple !important;
 }
